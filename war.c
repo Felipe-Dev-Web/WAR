@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
-    Struct Territorio:
-    Serve para guardar vários dados juntos sobre um território.
-    Aqui temos 3 informações:
+//
       - nome: nome do território
       - cor: cor do exército
       - tropas: quantidade de tropas
-*/
+//
 typedef struct {
     char nome[30];
     char cor[10];
@@ -17,7 +14,7 @@ typedef struct {
 
 int main() {
 
-    // Criamos um vetor com 5 posições para armazenar os 5 territórios
+    //vetor com 5 posições para armazenar os 5 territórios
     Territorio territorios[5];
 
     printf("=== Cadastro de Territorios ===\n\n");
@@ -38,7 +35,7 @@ int main() {
         printf("\n");
     }
 
-    // Após cadastrar, mostramos tudo
+    //mostramos tudo
     printf("\n=== Territorios cadastrados ===\n");
 
     for (int i = 0; i < 5; i++) {
